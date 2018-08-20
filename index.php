@@ -7,8 +7,10 @@
   <body>
     <!-- exo05-6/?week=12 -->
       <?php
-        if (isset($_GET['week'])) {
+        if (!empty($_GET['week'])) {
         echo $_GET['week'];
+      } else {
+        echo 'Merci d\indiquer une semaine';
       }
       ?>
   </body>
